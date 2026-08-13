@@ -279,3 +279,69 @@ html {
   background-color: white;
   transform: scale(1.05);
 }
+
+/* Premium game card hover effect */
+.games li {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.games li:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.35);
+}
+
+/* Image hover effect */
+.games li img {
+  transition: transform 0.4s ease;
+}
+
+.games li:hover img {
+  transform: scale(1.05);
+}
+
+/*Visit Game button */
+.explore-button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+  .games {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .games li {
+    width: 100%;
+  }
+
+  .games li img {
+    width: 100%;
+    height: auto;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
